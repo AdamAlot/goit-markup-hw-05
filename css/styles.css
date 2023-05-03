@@ -94,6 +94,9 @@ img {
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover {
@@ -114,6 +117,9 @@ img {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--text-contacts-color);
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-contact:hover,
 .link-contact:focus {
@@ -144,6 +150,9 @@ img {
   border-color: var(--background-button-color);
   border-style: hidden;
   padding: 6px 22px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
   background-color: var(--brand-color);
@@ -429,6 +438,9 @@ img {
   fill: var(--icon-color);
   padding: 12px;
   border-radius: 50%;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .instagram:hover,
 .instagram:focus {
@@ -441,6 +453,9 @@ img {
   fill: var(--icon-color);
   padding: 12px;
   border-radius: 50%;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .twitter:hover,
 .twitter:focus {
@@ -453,6 +468,9 @@ img {
   fill: var(--icon-color);
   padding: 12px;
   border-radius: 50%;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .facebook:hover,
 .facebook:focus {
@@ -466,6 +484,9 @@ img {
   fill: var(--icon-color);
   padding: 12px;
   border-radius: 50%;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .linkedin:hover,
 .linkedin:focus {
@@ -519,6 +540,11 @@ img {
   border-radius: 4px;
   padding: 16px 32px;
 }
+.customer-efect {
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .customer-efect:hover {
   fill: var(--brand-color);
   cursor: pointer;
@@ -558,6 +584,9 @@ img {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   fill: var(--icon-color);
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .insta:hover,
@@ -571,7 +600,11 @@ img {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   fill: var(--icon-color);
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .twitt:hover,
 .twitt:focus {
   fill: var(--text-second-color);
@@ -583,7 +616,11 @@ img {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   fill: var(--icon-color);
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .fb:hover,
 .fb:focus {
   fill: var(--text-second-color);
@@ -595,6 +632,9 @@ img {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   fill: var(--icon-color);
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .linken:hover,
 .linken:focus {
