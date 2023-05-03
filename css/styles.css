@@ -48,10 +48,11 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%), scale(1);
+  transform: translate(-50% -50%), scale(1);
   transition: transform 1s ease;
   width: 528px;
   height: 581px;
+  margin: 0;
   background-color: var(--text-second-color);
 }
 .is-hidden {
@@ -65,9 +66,10 @@ img {
 
 .x-close {
   position: absolute;
+  top: 8px;
+  right: 8px;
   display: flex;
-  left: 90%;
-  bottom: 90%;
+
   padding: 6px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -75,7 +77,6 @@ img {
   background-color: #ffffff;
 }
 
-}
 /*NAVI PANEL */
 
 .box {
