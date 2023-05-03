@@ -150,7 +150,7 @@ img {
   border-color: var(--background-button-color);
   border-style: hidden;
   padding: 6px 22px;
-  transition-property: color;
+  transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -185,6 +185,9 @@ img {
   padding: 10px 40px;
   margin-top: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* HEADER */
@@ -336,7 +339,11 @@ img {
 .grid-item {
   display: block;
   border-top: none;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .grid-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -363,16 +370,48 @@ img {
 }
 
 .column-photo {
+  position: relative;
   display: flex;
   flex-wrap: nowrap;
   column-gap: 30px;
 }
-.column-photo-item {
+.column-photo-item-1 {
+  position: relative;
+  flex-basis: calc((100% - 30px) / 3);
+  display: block;
+  margin: 0 auto;
+}
+.column-photo-item-2 {
+  position: relative;
+  flex-basis: calc((100% - 30px) / 3);
+  display: block;
+  margin: 0 auto;
+}
+.column-photo-item-3 {
+  position: relative;
   flex-basis: calc((100% - 30px) / 3);
   display: block;
   margin: 0 auto;
 }
 
+.img-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 27px 90px;
+  color: var(--text-second-color);
+  background: rgba(47, 48, 58, 0.8);
+}
 .master-disaster {
   max-width: 1600px;
   width: 100%;
@@ -438,7 +477,7 @@ img {
   fill: var(--icon-color);
   padding: 12px;
   border-radius: 50%;
-  transition-property: fill;
+  transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -453,7 +492,7 @@ img {
   fill: var(--icon-color);
   padding: 12px;
   border-radius: 50%;
-  transition-property: fill;
+  transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -468,7 +507,7 @@ img {
   fill: var(--icon-color);
   padding: 12px;
   border-radius: 50%;
-  transition-property: fill;
+  transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -484,7 +523,7 @@ img {
   fill: var(--icon-color);
   padding: 12px;
   border-radius: 50%;
-  transition-property: fill;
+  transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
