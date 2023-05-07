@@ -71,11 +71,17 @@ img {
   right: 8px;
   display: flex;
 
-  padding: 6px;
+  padding: 5px;
+
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   fill: #000000;
   background-color: #ffffff;
+}
+.x-close:hover,
+.x-close:focus {
+  fill: var(--brand-color);
+  cursor: pointer;
 }
 
 /*NAVI PANEL */
@@ -99,15 +105,18 @@ img {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 .ixon-mail {
   margin-right: 10px;
+  margin-bottom: -1px;
   fill: currentColor;
 }
 
 .ixon-tel {
   margin-right: 10px;
+  margin-bottom: -2px;
   fill: currentColor;
 }
 
@@ -123,6 +132,13 @@ img {
   margin-top: 20px;
   border-radius: 2px;
   background-color: var(--brand-color);
+}
+
+.main-page {
+  color: var(--brand-color);
+}
+.portfolio-page {
+  color: var(--brand-color);
 }
 /*LOGO*/
 .logo-link {
@@ -419,8 +435,6 @@ img {
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
-  margin: 0;
   background-color: var(--brand-color-alpha);
   font-family: "Roboto";
   font-style: normal;
@@ -430,12 +444,14 @@ img {
   letter-spacing: 0.03em;
   color: var(--text-second-color);
   padding: 49px 24px;
-  transform: translateY(100%);
+  transform: translateY(150%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .wraper:hover .wraper-descript {
   transform: translateY(0%);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .section-grid {
   padding-top: 50px;
   padding-bottom: 94px;
@@ -509,6 +525,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   padding: 20px 24px;
 }
+
 .navi-list {
   display: flex;
   justify-content: flex-end;
