@@ -129,7 +129,7 @@ img {
   position: absolute;
   width: 53px;
   height: 4px;
-  margin-top: 20px;
+  margin-top: 29px;
   border-radius: 2px;
   background-color: var(--brand-color);
 }
@@ -277,6 +277,7 @@ img {
   justify-content: space-between;
   padding: 25px 15px;
 }
+
 .main-header {
   font-weight: 900;
   font-size: 44px;
@@ -447,7 +448,7 @@ img {
   transform: translateY(150%);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.wraper:hover .wraper-descript {
+.grid-item:hover .wraper-descript {
   transform: translateY(0%);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
